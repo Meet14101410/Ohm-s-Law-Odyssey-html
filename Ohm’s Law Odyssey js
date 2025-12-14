@@ -1,0 +1,6 @@
+function calc(){
+  let I = document.getElementById("i").value;
+  let R = document.getElementById("r").value;
+  document.getElementById("out").innerText =
+    "Voltage = " + (I * R) + " V";
+}
