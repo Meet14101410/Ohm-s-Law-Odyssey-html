@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ohm’s Law Odyssey</title>
+</head>
+<body>
+  <h2>Ohm’s Law Odyssey</h2>
+
+  <input id="i" type="number" placeholder="Current (A)">
+  <input id="r" type="number" placeholder="Resistance (Ω)">
+  <br><br>
+  <button onclick="calc()">Calculate Voltage</button>
+
+  <p id="out"></p>
+
+  <script>
+    function calc(){
+      let I = document.getElementById("i").value;
+      let R = document.getElementById("r").value;
+      document.getElementById("out").innerHTML =
+        "Voltage = " + (I * R) + " V";
+    }
+  </script>
+</body>
+</html>
